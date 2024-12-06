@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Layout 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', serif;
+        }
+
+        .navbar {
+            background-color: rgb(48, 165, 243);
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 25px;
+            font-family: "Leckerli One", cursive;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .container div {
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-align: center;
+        }
+        .container img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .blue {
+            background-color: #247ba0;
+            color: white;
+        }
+
+        .yellow {
+            background-color: #f3ca40;
+        }
+
+        .orange {
+            background-color: #f7882f;
+            color: white;
+        }
+
+        .title h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Gabriel Otico</h1>
+    <div>
+      <a href="#">Layout 1</a>
+      <a href="layout2.html">Layout 2</a>
+      <a href="layout3.html">Layout 3</a>
+    </div>
+  </div>
+
+  <div class="title">
+    <h1>First Layout</h1>
+    </div>
+
+  <div class="container">
+    <div class="blue">
+        <img src="letterG.png" alt="">
+    </div>
+    <div class="yellow">
+        <img src="letterA.png" alt="">
+    </div>
+    <div class="orange">
+        <img src="letterB.png" alt="">
+    </div>
+    <div class="orange">
+        <img src="letterC.png" alt="">
+    </div>
+    <div class="empty"></div>
+    <div class="yellow">
+        <img src="letterU.png" alt="">
+    </div>
+    <div class="yellow">
+        <img src="letterT.png" alt="">
+    </div>
+    <div class="orange">
+        <img src="letterI.png" alt="">
+    </div>
+    <div class="blue">
+        <img src="letterE.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
